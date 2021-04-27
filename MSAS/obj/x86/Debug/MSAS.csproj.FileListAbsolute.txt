@@ -1,0 +1,27 @@
+C:\Users\Ivan\Documents\Visual Studio 2013\Projects\MSAS - Copy02222021 Prototype A\MSAS\bin\x86\Debug\MSAS.exe.config
+C:\Users\Ivan\Documents\Visual Studio 2013\Projects\MSAS - Copy02222021 Prototype A\MSAS\obj\x86\Debug\MSAS.csproj.ResolveComReference.cache
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\bin\x86\Debug\MSAS.exe.config
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.csproj.ResolveComReference.cache
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\bin\x86\Debug\MSAS.exe
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\bin\x86\Debug\MSAS.pdb
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.AddFindings.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.AuditFindings.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.AuditSchedule.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.Configuration.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.EditWorkingPaper.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.FindingsInfo.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.frmAdjustmentRequest.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.frmTickDoc.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.LoginForm.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.Properties.Resources.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.SaveVarianceBreakdownSummary.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.SelectDate.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.SpecialCase.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.VarianceBreakdown.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.VarianceBreakdownSummary.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.WorkingPaper.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.printWorkingPaper.resources
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.csproj.GenerateResource.Cache
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.exe
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.pdb
+C:\Users\Ivan Correa\Documents\Visual Studio 2013\Projects\MSAS\MSAS\obj\x86\Debug\MSAS.csprojResolveAssemblyReference.cache

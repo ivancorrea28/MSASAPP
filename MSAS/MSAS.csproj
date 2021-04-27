@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5EED8261-1FDC-4826-8F54-DB7481146CE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MSAS</RootNamespace>
+    <AssemblyName>MSAS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddFindings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFindings.Designer.cs">
+      <DependentUpon>AddFindings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFindings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuditFindings.Designer.cs">
+      <DependentUpon>AuditFindings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuditSchedule.Designer.cs">
+      <DependentUpon>AuditSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration.Designer.cs">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="crWorkingPaper.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crWorkingPaper.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsWorkingPaper.cs">
+      <DependentUpon>dsWorkingPaper.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsWorkingPaper.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWorkingPaper.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditWorkingPaper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditWorkingPaper.Designer.cs">
+      <DependentUpon>EditWorkingPaper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindingsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindingsInfo.Designer.cs">
+      <DependentUpon>FindingsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdjustmentRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdjustmentRequest.Designer.cs">
+      <DependentUpon>frmAdjustmentRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTickDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTickDoc.Designer.cs">
+      <DependentUpon>frmTickDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveVarianceBreakdownSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveVarianceBreakdownSummary.Designer.cs">
+      <DependentUpon>SaveVarianceBreakdownSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectDate.Designer.cs">
+      <DependentUpon>SelectDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialCase.Designer.cs">
+      <DependentUpon>SpecialCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VarianceBreakdown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VarianceBreakdown.Designer.cs">
+      <DependentUpon>VarianceBreakdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VarianceBreakdownSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VarianceBreakdownSummary.Designer.cs">
+      <DependentUpon>VarianceBreakdownSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingPaper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingPaper.Designer.cs">
+      <DependentUpon>WorkingPaper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printWorkingPaper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printWorkingPaper.Designer.cs">
+      <DependentUpon>printWorkingPaper.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddFindings.resx">
+      <DependentUpon>AddFindings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuditFindings.resx">
+      <DependentUpon>AuditFindings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuditSchedule.resx">
+      <DependentUpon>AuditSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration.resx">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crWorkingPaper.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crWorkingPaper.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditWorkingPaper.resx">
+      <DependentUpon>EditWorkingPaper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindingsInfo.resx">
+      <DependentUpon>FindingsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdjustmentRequest.resx">
+      <DependentUpon>frmAdjustmentRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTickDoc.resx">
+      <DependentUpon>frmTickDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SaveVarianceBreakdownSummary.resx">
+      <DependentUpon>SaveVarianceBreakdownSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDate.resx">
+      <DependentUpon>SelectDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialCase.resx">
+      <DependentUpon>SpecialCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VarianceBreakdown.resx">
+      <DependentUpon>VarianceBreakdown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VarianceBreakdownSummary.resx">
+      <DependentUpon>VarianceBreakdownSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingPaper.resx">
+      <DependentUpon>WorkingPaper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printWorkingPaper.resx">
+      <DependentUpon>printWorkingPaper.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dsWorkingPaper.xsc">
+      <DependentUpon>dsWorkingPaper.xsd</DependentUpon>
+    </None>
+    <None Include="dsWorkingPaper.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWorkingPaper.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsWorkingPaper.xss">
+      <DependentUpon>dsWorkingPaper.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-loading-gif-transparent-10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
